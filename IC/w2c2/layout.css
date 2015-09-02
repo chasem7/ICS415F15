@@ -1,0 +1,23 @@
+#header{
+
+    background-color: gray;
+    font-family: 'Sigmar One', cursive;
+
+}
+
+#body{
+
+    background-image: url("Street.jpg");
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+#table{
+
+    background-color: white;
+    color: black;
+
+}
+
