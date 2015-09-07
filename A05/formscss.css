@@ -33,7 +33,7 @@ canvas{
     position: absolute;
     border: 1px solid white;
     width: 25%;
-    height: 56.5%;
+    height: 80.5%;
 
 
 }
@@ -54,7 +54,7 @@ canvas{
     border: 1px solid black;
 
 
-    
+
 }
 
 #footer{
@@ -62,7 +62,7 @@ canvas{
     height: 50px;
     border: 1px solid white;
     position: absolute;
-    margin-top: 543px;
+    margin-top: 770px;
     width: 99%;
 
 }

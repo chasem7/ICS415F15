@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type = "text/css" href="formscss.css">
+    <link href='https://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+</head>
+
+<body id="body">
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+        ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<header id="header" align = "center"><h1>Hello World!</h1></header>
+<tr>
+    <nav id = navbar align = "center"><td><a href="index.html">Home</a> <a href="Form.html">Forms</a></td></nav>
+</tr>
+<aside id = sidebar>
+    <p>Welcome to my website</p>
+    Forms Page
+</aside>
+<section id = right>
+
+    <header>Placeholder Form</header>
+    <form>
+
+
+        <input type="color" name="color" value="black">Color
+        <br>
+
+        <p>Date</p>
+        <input type="date" name="date" value="date">
+        <br>
+        <p>Date Time</p>
+        <input type="datetime" name="datetime" value="datetime">
+        <br>
+        Placeholder Field:
+        <input placeholder="Type Here" name = "placeholder-test" type = "text">
+        <br>
+        <p>Email</p>
+        <form>
+            <input type="email" placeholder="Enter your email" required>
+            <p>Submit button to send form data</p>
+
+            <form action="Form.html" method="get"><input type="submit" value="Submit"></form>
+
+        </form>
+        <br>
+        <p>Month</p>
+        <input type="month" name="month" value="month">Month
+        <br>
+        <p>Number</p>
+        <input type="number" name="number" value="10">
+        <br>
+
+        <p>Range</p>
+        <input type="range" name="range" value="range">
+        <br>
+        <p>Search</p>
+        <input type="search" name="search" value="Search">
+        <br>
+        <p>URL</p>
+        <form>
+        <input type="url" name="url" value="URL">
+        <br>
+        <form action="Form.html" method="get"><input type="submit" value="Submit"></form>
+            </form>
+    </form>
+
+</section>
+
+</body>
+<footer id = footer>
+
+    Footer
+</footer>
+</html>
