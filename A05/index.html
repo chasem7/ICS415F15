@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type = "text/css" href="layout.css">
+    <link href='https://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+</head>
+
+<body id="body">
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+        ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<header id="header" align = "center"><h1>Hello World!</h1></header>
+<tr>
+    <nav id = navbar align = "center"><td><a href="index.html">Home</a> <a href="Form.html">Forms</a></td></nav>
+</tr>
+<aside id = sidebar>
+<p>Welcome to my website</p>
+<ul>
+    <li>Test #1</li>
+    <li>Test #2</li>
+    <li>Test #3</li>
+
+</ul>
+
+<ol>
+
+    <li>Test #1</li>
+    <li>Test #2</li>
+    <li>Test #3</li>
+
+</ol>
+</aside>
+<section id = right>
+
+    <table id="table" border = "1" style = "width:100%">
+        <tbody>
+        <tr>
+            <th>#1</th>
+            <th>#2</th>
+        </tr>
+        <tr>
+            <td>Test</td>
+            <td>ICS</td>
+        </tr>
+
+        <tr>
+
+            <td>Hello</td>
+            <td>Hi</td>
+
+        </tr>
+        </tbody>
+    </table>
+    <br>
+    <header>Canvas</header><br>
+
+    <canvas id="canvas" width="200" height="100" style="border:1px solid #000000;" >
+    </canvas>
+
+    <header>SVG</header>
+
+    <svg width="300" height="200">
+        <polygon points="100,10 40,198 190,78 10,78 160,198"
+                 style="fill:yellow;stroke:black;stroke-width:5;fill-rule:evenodd;" />
+    </svg>
+    <br><br>
+    <header>Placeholder Form</header>
+    <form>
+        <p>The following is a text input</p>
+
+        Username:
+        <input type="text" username="username"><br>
+        <p>Then a password input</p>
+
+        Password:
+        <input type="text" password="username">
+        <br>
+        <p>Radio Buttons</p>
+        <input type="radio" name="sex" value="male">Male
+        <br>
+        <input type="radio" name="sex" value="female">Female
+        <br>
+        <p>Checkboxes</p>
+        <input type="checkbox" name="os" value="Windows">Windows
+        <br>
+        <input type="checkbox" name="os" value="OS X">OS X
+        <br>
+        <input type="checkbox" name="os" value="Linux">Linux
+        <br><br>
+        Placeholder Field:
+        <input placeholder="Type Here" name = "placeholder-test" type = "text">
+        <br>
+        <p>Email</p>
+        <form>
+            <input type="email" placeholder="Enter your email" required>
+            <p>Submit button to send form data</p>
+
+            <form action="HelloWorld.html" method="get"><input type="submit" value="Submit"></form>
+
+        </form>
+    </form>
+    <br><br>
+
+</section>
+
+</body>
+<footer id = footer>
+
+    Footer
+</footer>
+</html>
