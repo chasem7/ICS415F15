@@ -34,6 +34,7 @@ nav,
 section,
 summary {
     display: block;
+    color: white;
 }
 audio,
 canvas,
@@ -1191,7 +1192,7 @@ h6,
     font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
     font-weight: 300;
     line-height: 1.1;
-    color: inherit;
+    color: black;
 }
 h1 small,
 h2 small,
@@ -1622,6 +1623,7 @@ pre code {
     min-height: 1px;
     padding-left: 15px;
     padding-right: 0px;
+    background-color: white;
 
 }
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {

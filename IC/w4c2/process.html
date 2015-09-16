@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+</head>
+<body>
+
+<script>
+
+    //document.getElementById("write").innerHTML = window.location.search;
+    var str = window.location.search;
+    //document.writeln(str);
+    var res = str.split("&");
+    var username = res[0].split("=");
+    var address = res[1].split("=");
+    var phone = res[2].split("=");
+    document.writeln("Username: " + username[1]);
+    document.writeln("Address: " + address[1]);
+    document.writeln("Phone Number: " + phone[1]);
+</script>
+
+
+</body>
+</html>
