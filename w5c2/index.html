@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:height="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Chase's Website</title>
+    <link rel="stylesheet" type = "text/css" href="bootstrap.css">
+    <link rel="stylesheet" type = "text/css" href="layout.css">
+    <script src="scripts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <h1 align="center">jQuery Events</h1>
+    <script src="jquery-1.11.3.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#first").click(function(){
+                $("#first").css("color","pink");
+                alert("The font was changed to pink.");
+            });
+        });
+        $(document).ready(function() {
+            $("#second").mouseenter(function () {
+                $("#second").css("background-color", "yellow");
+            });
+        });
+        $(document).ready(function() {
+        $("#third").mouseleave(function(){
+            $("#third").css("background-color", "gray");
+        });
+        });
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("#first").hide();
+            });
+            $("#show").click(function(){
+                $("#first").show();
+            });
+            $(document).ready(function(){
+                $("#load").click(function(event){
+                    $('#test').load('test.html');
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+<div>
+    <div class ="container-fluid">
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+            <li><a data-toggle="tab" href="#two">Two</a></li>
+            <li><a data-toggle="tab" href="#three">Three</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <div class="row">
+                    <div class="col-sm-4">Column 1
+                        <p id = "first">Click the text to change text color</p>
+                        <button id="hide">Hide</button>
+                        <button id="show">Show</button>
+
+                    </div>
+                    <div class="col-sm-4">Column 2
+
+                        <p id = "second">Hover over the text to change the color</p>
+
+                    </div>
+                    <div class="col-sm-4" id = test>Column 3
+                        <br>
+
+                        <p id = "third" onmouseleave="onLeave()">Hover over the text to change the color</p>
+                        <p id = "fourth">Click the button to change text color of column 1 to Orange</p>
+                        <input type="button" id="button" value = "button" style= "color:white" onclick="changeFirst('button', '#101010')";/>
+                        <button id = "load">Get External Content</button>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="two" class="tab-pane fade">
+            <h3>Two</h3>
+            <p>Some content in menu 1.</p>
+        </div>
+        <div id="three" class="tab-pane fade">
+            <h3 height>Three</h3>
+            <p>Some content in menu 1.</p>
+
+        </div>
+    </div>
+</div>
+
+<footer>Footer</footer>
+</div>
+</body>
+</html>
